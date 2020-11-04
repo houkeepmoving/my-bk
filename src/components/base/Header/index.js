@@ -32,10 +32,11 @@ export default function Header(props) {
       </div>
       <div className={classNames(styles.navigation_wrapper, {[styles.navigation_wrapper_show] : navigationWrapperShow, [styles.navigation_wrapper_none] : !navigationWrapperShow})}>
         <div className={styles.portrait_wrapper}>
-          <img src="http://demo2.cssmoban.com/cssthemes6/jiyjsfsadaf/assets/images/profile.png" alt="" />
+          <img src={require('../../../assets/images/me.jpg')} alt="" />
+          <div className={styles.img_wrapper}></div>
         </div>
         <div className={styles.introduce_wrapper}>
-          Hi，my name is dasda,dmas dasd damsd amdmas d mdasd as,defma dmdas dmdas dmas damdad adma dasd dmad,adma dad ad admad ada
+          Hi，my name is hotel, Currently working at AutoHome as a front-end developer; I have four years of development experience;
         </div>
         <ul className={styles.directory_wrapper}>
           <li className={classNames({[styles.active] : type === 1})} onClick={() => typeCkick(1)}>Home</li>
