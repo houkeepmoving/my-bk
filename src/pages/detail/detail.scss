@@ -1,0 +1,24 @@
+@import '../../assets/styles/core/base';
+@import '../../assets/styles/core/setting';
+@import '../../assets/styles/core/reset';
+
+.detail_container {
+  width: 100%;
+  .content_wrapper {
+    padding: pr2(20);
+    box-sizing: border-box;
+    .title {
+      color: #292929;
+      font-weight: bold;
+      font-size: pr2(26);
+      line-height: 1.2;
+      @include ellipsisLn(2);
+    }
+    .content {
+      color: #4f4f4f;
+      font-size: pr2(16);
+      line-height: 1.2;
+      margin-top: pr2(20);
+    }
+  }
+}
